@@ -1,13 +1,19 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
-void printmyname()
+struct node
 {
-    cout<<"my name is Rahul Yadav.";
-#include"myname.h"
-
+    int data;
+    node* next  =  NULL;
+};
 
 int main()
 {
-    printmyname();
+    int numberofnodes;
+    cin>> numberofnodes;
+    while(numberofnodes--)
+    {
+        
+    }
 }
