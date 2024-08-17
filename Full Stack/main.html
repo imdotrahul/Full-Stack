@@ -1,22 +1,25 @@
-<!DOCTYPE htm>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice html</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Variables</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button class="subscribe">Subscribe</button>
-    <button class="join">Join</button>
-    <button class="tweet">Tweet</button>
+    <h3>Cart Quantitiy</h3>
+    <button onclick="console.log(`Cart Quantitiy: ${cartquantity}`);">
+      Show Quantitiy
+    </button>
 
-    <p>exercide 3</p>
-    <button>Request Now</button>
-    <button>Add to Cart</button>
-    <button>Sign Up</button>
-    <button>Get started</button>
-    <button></button>
-    <button></button>
+    <button onclick="cartquantity++;">Add to Cart</button>
+
+    <button onclick="cartquantity+=2;">+2</button>
+    <button onclick="cartquantity+=3;">+3</button>
+    <button onclick="cartquantity = 0;">Reset Cart</button>
+
+    <script>
+      let cartquantity = 0;
+    </script>
   </body>
 </html>
