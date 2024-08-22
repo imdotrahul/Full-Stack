@@ -18,31 +18,38 @@
         const a = Math.random();
         let computermove;
 
-        if (a < 1 / 3) {
-          computermove = "Rock";
-        } else if (a < 2 / 3 && a > 1 / 3) {
-          computermove = "Paper";
-        } else {
-          computermove = "Scissors";
+        function computermovepick() {
+          if (a < 1 / 3) {
+            computermove = "Rock";
+          } else if (a < 2 / 3 && a > 1 / 3) {
+            computermove = "Paper";
+          } else {
+            computermove = "Scissors";
+          }
+          return computermove;
         }
+        computermovepick();
 
-        if (computermove === ourresult) {
-          alert(
-            `You picked ${ourresult} and computer picked ${computermove}. Tie`
-          );
-        } else if (
-          (ourresult === "Rock" && computermove === "Scissors") ||
-          (ourresult === "Paper" && computermove === "Rock") ||
-          (ourresult === "Scissors" && computermove === "Paper")
-        ) {
-          alert(
-            `You picked ${ourresult} and computer picked ${computermove}. You win!`
-          );
-        } else {
-          alert(
-            `You picked ${ourresult} and computer picked ${computermove}. You Lose`
-          );
+        function result() {
+          if (computermove === ourresult) {
+            alert(
+              `You picked ${ourresult} and computer picked ${computermove}. Tie`
+            );
+          } else if (
+            (ourresult === "Rock" && computermove === "Scissors") ||
+            (ourresult === "Paper" && computermove === "Rock") ||
+            (ourresult === "Scissors" && computermove === "Paper")
+          ) {
+            alert(
+              `You picked ${ourresult} and computer picked ${computermove}. You win!`
+            );
+          } else {
+            alert(
+              `You picked ${ourresult} and computer picked ${computermove}. You Lose`
+            );
+          }
         }
+        result();
       }
     </script>
   </body>
