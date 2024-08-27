@@ -1,5 +1,7 @@
-let soup = 10;
-let burger = 8;
-let icecream = 5;
+let a = "Rahul";
+a = "Yadav";
 
-console.log(soup + 3 * burger + icecream);
+let n = 10;
+n = 100;
+
+console.log(a, n);
