@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice</title>
-    <script src="practice.js"></script>
-    <script src="shadow.js"></script>
-  </head>
-  <body>
-    <h4>Practicing Javascript</h4>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Practice</title>
+        <script src="practice.js"></script>
+        <script src="shadow.js"></script>
+    </head>
+    <body>
+        <h4>Heads and Tails</h4>
+        <button onclick="playgame('Heads')">Head</button>
+        <button onclick="playgame('Tails')">Tails</button>
+
+        <script>
+            function playgame(guess) {
+                let computerguess = Math.random();
+                const result = computerguess < 0.5 ? "Heads" : "Tails";
+
+                console.log(alert(result == guess ? "You win" : "You Loose"));
+            }
+        </script>
+    </body>
 </html>
