@@ -1,7 +1,8 @@
-let a = "Rahul";
-a = "Yadav";
+var x = 20;
 
-let n = 10;
-n = 100;
+function foo() {
+    console.log(x);
+    var x = 10;
+}
 
-console.log(a, n);
+foo();

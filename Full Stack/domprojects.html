@@ -15,17 +15,42 @@
         <p>Orders under $40 = +$10 shipping.</p>
         <p>Orders over $40 = FREE shipping.</p>
         <input class="input-box" type="text" placeholder="Cost of Order" />
-        <button class="calculate-button">Calculate</button>
+        <button class="calculate-button" onclick="calculateTotal()">
+            Calculate
+        </button>
+        <p class="total-cost"></p>
         <p>Rock Paper Scissors</p>
         <script>
             function subscribe() {
-                const subscribe = document.querySelector(".subscribe-button");
-                if (subscribe.innerHTML === "Subscribe") {
-                    subscribe.innerHTML = "Subscribed";
+                const subscribee = document.querySelector(".subscribe-button");
+                if (subscribee.innerHTML === "Subscribe") {
+                    subscribee.innerHTML = "Subscribed";
+                    subscribee.classList.add("is-subscribed");
                 } else {
-                    subscribe.innerHTML = "Subscribe";
+                    subscribee.innerHTML = "Subscribe";
+                    subscribee.classList.remove("is-subscribed");
                 }
             }
+
+            function calculateTotal() {
+                const costinput = document.querySelector(".input-box");
+                let cost = Number(costinput.value);
+
+                if (cost < 40) {
+                    cost = cost + 10;
+                }
+                document.querySelector(".total-cost").innerHTML = `$${cost}`;
+            }
+            document
+                .querySelector(".input-box")
+                .addEventListener("keydown", function (event) {
+                    if (event.key == "Enter") {
+                        calculateTotal();
+                    } else if (event.key == "Escape") {
+                        document.querySelector(".input-box").value = "";
+                        document.querySelector(".total-cost").innerHTML = "";
+                    }
+                });
         </script>
     </body>
 </html>
