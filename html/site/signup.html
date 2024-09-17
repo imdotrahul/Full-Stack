@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE ACCOUNT</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(/login.html/samantha-gades-BlIhVfXbi9s-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 55px;
+    }
+    .regform{
+        width: 300px;
+        margin: auto;
+        color: #3f3c3c;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .main{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+    width: 370px;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(83, 77, 77, 0.04);
+    box-shadow: -1px 4px 28px 0px rgba(59, 53, 53, 0.75);
+    }
+    form{
+        color: rgb(95, 83, 83);
+        padding: 10px;
+    }
+    button{
+        background-color: thistle;
+        display: block;
+        margin: 20px 0px 0px 20px;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid #cc9393;
+        padding: 10px 40px;
+        outline: none;
+        color: azure;
+        cursor: pointer;
+    }
+    .button:hover{
+        color: #ce7575;
+    }
+    </style>
+</head>
+<body>
+    <div class="regform"><h1>Create Account</h1></div>
+    <div class="main">
+        <form action="try.php" method="POST">
+            <div id="name">
+                <h2 class="name">Name</h2>
+                <input type="text" name="firstname" required placeholder="FirstName"><br>
+                <input type="text" name="lastname" required placeholder="LastName"><br><br>
+            </div>
+            <h2 class="name">Email</h2>
+            <input class="email" name="email" type="text"><br><br>
+            
+            <h2 class="name">Phone</h2>
+            <input class="number" type="text" name="phone"><br><br>
+
+            <h2 class="name">Set Password</h2>
+            <input class="password" type="text" name="password"><br><br>
+
+            <h2 class="name">Confirm Password</h2>
+            <input class="confirm_passward" name="confirmpassword" type="text">
+             
+            <button class="button" type="submit" name="submit" />Register</button>
+    
+        </form>
+
+        <script>
+          document.querySelector('.button').onclick = function(){
+              var password = document.querySelector('.password').value,
+                  confirm_passward = document.querySelector('.confirm_password').value;
+
+                  if(password == ""){
+                      alert("Field cannot be empty");
+                  }
+                  else if(password != confirm_passward){
+                    alert("Password does not match");
+                    return false  
+                  }
+                  else if(password == confirm_passward){
+                      alert("Password match")
+                      }
+                      return true
+          }    
+
+        </script>
+    </div>
+    
+</body>
+</html>

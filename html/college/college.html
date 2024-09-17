@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!-- CSS Here -->
+  <title>Frontend Mentor | STFile landing page with dark theme and features grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background-color: #000000;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+}
+
+.box{
+    position: absolute;
+    left: 0%;
+    top: 5%;
+}
+
+.navbar{
+    border: 1px solid none;
+    height: 80px;
+    margin-top: -40px;
+    background: #08192d;
+
+}
+ul{
+    float: right;
+    margin: 30px 230px;
+}
+ul li{
+    float: left;
+    margin: 0px 50px;
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul li a:hover{
+    color: #fc0254;
+}
+.h{
+    color: #979aa5;
+}
+span{
+    color: white;
+    margin: 0px 5px;
+}
+h4{
+    position: absolute;
+    left:78%;
+    top:-20%;
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.signUp{
+    position: absolute;
+    left: 85%;
+    top: -20%;
+    width: 200px;
+    cursor: pointer;
+}    
+
+h5{
+    color:#fc0254;
+    font-weight:400;
+    font-size:16px;
+    animation: 4s signUp none;
+    text-transform: capitalize;
+}
+@keyframes signUp{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+.symb{
+    position: absolute;
+    left: 4%;
+    top: -35%;
+}
+h2{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    animation: 2s text none;
+}
+
+font{
+    color: #fc0254;
+}
+
+@keyframes text{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+.image{
+    position: absolute;
+    left: 55%;
+    top: 100%;
+    animation: 2s img none;
+}
+@keyframes img{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.get_started{
+    position: absolute;
+    left: 4%;
+    top: 450%;
+    text-transform: capitalize;
+    animation: 2s contents none;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+@keyframes contents{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+h3{
+    width: 600px;
+    color: #979aa5;
+    text-align: justify;
+    font-weight: 400;
+}
+.buttons{
+    position: absolute;
+    top: 110%;
+}
+button{
+    padding: 20px;
+    border-radius: 60px;
+    width: 200px;
+    background: #fc0254;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: Montserrat,sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 10px #000 ;
+}
+.button02{
+    padding: 20px;
+    border-radius: 60px;
+    width: 200px;
+    background: #383b70;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: Montserrat,sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 10px #000 ;
+    margin: 0px 20px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.image1{
+    overflow: scroll;
+    position: absolute;
+    left: 1%;
+    top: 250%;
+    animation: 2s img none;
+}
+@keyframes img{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.contents1{
+    position: absolute;
+    left: 130%;
+    top: 350%;
+    text-transform: capitalize;
+    animation: 2s contents none;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+@keyframes contents{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+h3{
+    width: 600px;
+    color: #979aa5;
+    text-align: justify;
+    font-weight: 400;
+}
+.buttons1{
+    position: absolute;
+    top: 110%;
+}
+button{
+    padding: 20px;
+    border-radius: 60px;
+    width: 200px;
+    background: #fc0254;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: Montserrat,sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 10px #000 ;
+}
+
+
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="box">
+    <div class="navbar">
+      
+
+      <nav>
+        <ul>
+            <li><a href="">Feature</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Sign In</a></li>
+            
+            <li></li>
+            <li class="user">
+                <a href="" class="h">Help</a>
+                <span>|</span>
+                <h4><a href="login.html">login</a></h4>
+                <h5 class="signUp"><a href="signup.html">Create an Account !</a></h5>
+            </li>
+        </ul>
+        <div class="symb">
+            <h2><font>My</font>Site</h2>
+        </div>
+      </nav>
+    </div>
+    </div>
+    </header>
+    </header>
+  </header>
+  <br><
+
+  <main>
+    <div class="get-started">
+        <br><br><br>
+        <div><img src="get started.jpeg" alt="illustration-intro" class="imageFlow"></div>
+      
+    <div class="buttons"><button>Get Started</button></div>
+      <button>Get Started</button>
+      <br><br><br><br>
+
+      <h2>All your files in one secure location, accessible anywhere.</h2>
+      <br><br>
+
+      <h3>STFile stores all your most important files in one secure location. Access them wherever
+        you need, share and collaborate with friends family, and co-workers.</h3>
+    </div>
+    <br><br><br>
+
+    <div class="grid-articles">
+      <article>
+        <img src="accessfilesanywhere.png" alt="icon-access-anywhere" >
+
+        <h3>Access your files, anywhere</h3>
+
+        <h3>The ability to use a smartphone, tablet, or computer to access your account means your
+          files follow you everywhere.</h3>
+      </article>
+      <article>
+        <img src="images/icon-security.svg" alt="icon-security">
+
+        <h3>Security you can trust</h3>
+
+        <p>2-factor authentication and user-controlled encryption are just a couple of the security
+          features we allow to help secure your files.</p>
+      </article>
+      <article>
+        <img src="images/icon-collaboration.svg" alt="icon-collaboration">
+
+        <h3>Real-time collaboration</h3>
+
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration.
+          No email attachments required.</p>
+      </article>
+      <article>
+        <img src="images/icon-any-file.svg" alt="icon-any-file">
+
+        <h3>Store any type of file</h3>
+
+        <p>Whether you're sharing holidays photos or work documents, STFile has you covered allowing for all
+          file types to be securely stored and shared.</p>
+      </article>
+    </div>
+
+
+    <div class="stay-productive">
+      <img src="images/illustration-stay-productive.png" alt="illustration-stay-productive">
+
+      <div class="text">
+        <h2>Stay productive, wherever you are</h2>
+
+        <p>Never let location be an issue when accessing your files. STFile has you covered for all of your file
+          storage needs.</p>
+
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
+          attachments required.</p>
+
+        <a href="#">See how STFile works <img src="images/icon-arrow.svg" alt="icon-arrow"></a>
+      </div>
+    </div>
+
+    <div class="quotes">
+      <img src="images/bg-quotes.png" alt="bg-quotes">
+
+      <div class="container">
+        <p>STFile has improved our team productivity by an order of magnitude. Since making the switch our team has
+          become a well-oiled collaboration machine.</p>
+
+        <div class="author">
+          <img src="images/profile-1.jpg" alt="profile-1">
+          <div class="person">
+            <p class="name">Satish Patel</p>
+            <p>Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p>STFile has improved our team productivity by an order of magnitude. Since making the switch our team has
+          become a well-oiled collaboration machine.</p>
+
+        <div class="author">
+          <img src="images/profile-2.jpg" alt="profile-2">
+          <div class="person">
+            <p class="name">Bruce McKenzie</p>
+            <p>Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p>STFile has improved our team productivity by an order of magnitude. Since making the switch our team has
+          become a well-oiled collaboration machine.</p>
+
+        <div class="author">
+          <img src="images/profile-3.jpg" alt="profile-3">
+          <div class="person">
+            <p class="name">Iva Boyd</p>
+            <p>Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="early-access-card">
+      <h2>Get early access today</h2>
+
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+        questions, our support team would be happy to help you.</p>
+
+      <div class="email-form">
+        <input type="text" placeholder="email@example.com">
+        <button>Get Started For Free</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <a href="#" class="logo"><img src="images/logo.svg" alt="logo"></a>
+    <div class="navbar-grid">
+      <div>
+        <img src="images/icon-location.svg" alt="location">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua</p>
+      </div>
+      <div class="contacts">
+        <div>
+          <img src="images/icon-phone.svg" alt="phone">
+          <p>+1-543-123-4567</p>
+        </div>
+
+        <div>
+          <img src="images/icon-email.svg" alt="location">
+          <p>example@stfile.com</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#"><p>About Us</p></a>
+        <a href="#"><p>Jobs</p></a>
+        <a href="#"><p>Press</p></a>
+        <a href="#"><p>Blog</p></a>
+      </nav>
+
+      <nav>
+        <a href="#"><p>Terms</p></a>
+        <a href="#"><p>Contact Us</p></a>
+        <a href="#"><p>Privacy</p></a>
+      </nav>
+
+      <div class="links">
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+
+</html>
