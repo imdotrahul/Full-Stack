@@ -1,3 +1,7 @@
 body {
     margin: none;
+    background-color: grey;
+}
+.navigation-bar {
+    background-color: black;
 }
